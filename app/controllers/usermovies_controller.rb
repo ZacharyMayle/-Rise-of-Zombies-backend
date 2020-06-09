@@ -1,12 +1,12 @@
 class UsermoviesController < ApplicationController
     def index
         @usermovies = Usermovie.all
-        render json: @usermovies
+        render json: @usermovies, include: [:movie]
     end
 
     def show 
         @usermovie = Usermovie.find(params[:id])
-        render json: @usermovie
+        render json: @usermovie, include: [:movie]
     end
 
     def create
