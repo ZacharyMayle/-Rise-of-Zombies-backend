@@ -33,14 +33,14 @@ django = Movie.create(
     overview: 'great movie'
 )
 
-starwars = Movie.create(
-    original_title: 'Django',
-    release_date: '66',
-    vote_average: 4.0,
-    vote_count: 8909090,
-    poster: 'None',
-    overview: 'cool'
-)
+# starwars = Movie.create(
+#     original_title: 'Django',
+#     release_date: '66',
+#     vote_average: 4.0,
+#     vote_count: 8909090,
+#     poster: 'None',
+#     overview: 'cool'
+# )
 
 bob = User.create(
     name: "Bob",
@@ -48,10 +48,10 @@ bob = User.create(
     password: "1234"
 )
 
-zac = User.create(
-    name: "Zac",
-    email: "zac@test.com",
-    password: "1234"
-)
+# zac = User.create(
+#     name: "Zac",
+#     email: "zac@test.com",
+#     password: "1234"
+# )
 
 Usermovie.create(user: bob, movie: django)
