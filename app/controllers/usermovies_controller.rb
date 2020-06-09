@@ -11,8 +11,8 @@ class UsermoviesController < ApplicationController
 
     def create
         @new_usermovie = Usermovie.create({
-            user_id: params([:user_id]),
-            movie_id: params([:movie_id])
+            user_id: params[:user_id],
+            movie_id: params[:movie_id]
         })
         render json: @new_usermovie
     end
@@ -20,8 +20,8 @@ class UsermoviesController < ApplicationController
     def update
         @user = Usermovie.find(params[:id])
         @user.update(
-            user: params([:user_id]),
-            movie: params([:movie_id])
+            user: params[:user_id],
+            movie: params[:movie_id]
         )
         render json: @user
     end

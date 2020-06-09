@@ -48,10 +48,10 @@ bob = User.create(
     password: "1234"
 )
 
-# zac = User.create(
-#     name: "Zac",
-#     email: "zac@test.com",
-#     password: "1234"
-# )
+zac = User.create(
+    name: "Zac",
+    email: "zac@test.com",
+    password: "1234"
+)
 
 Usermovie.create(user: bob, movie: django)
